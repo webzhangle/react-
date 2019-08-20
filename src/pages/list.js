@@ -7,7 +7,7 @@ export default class List extends Component {
     }
     componentDidMount () {
         // console.log(this.props.match.params.id)
-        axios.get('/user').then((res)=>{
+        axios.post('/user').then((res)=>{
             console.log(res)
         })
     }

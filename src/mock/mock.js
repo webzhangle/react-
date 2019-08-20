@@ -26,5 +26,4 @@ const getdata = function(option){ //定义请求数据方法
 }
 
 // Mock.mock('/user', /post|get/i,getdata) //调用模拟数据方法
-
-Mock.mock('/user', 'get',getdata) //调用模拟数据方法
+Mock.mock('/user', 'post',getdata) //调用模拟数据方法
