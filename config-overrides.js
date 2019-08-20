@@ -1,7 +1,7 @@
 const { override, fixBabelImports, addLessLoader,addPostcssPlugins } = require('customize-cra');
 module.exports = override(
     fixBabelImports('import', {
-        libraryName: 'antd',
+        libraryName: 'antd-mobile',
         libraryDirectory: 'es',
         style: true,
     }),
@@ -14,6 +14,8 @@ module.exports = override(
         propList: ['*'],
         // propList: ['*', '!border*', '!font-size*', '!letter-spacing'],
         // propWhiteList: []
-        selectorBlackList: []
+        selectorBlackList: [
+            'am'
+        ]
      }),])
 );
