@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import '../components/css.css'
 export default class List extends Component {
     constructor(props){
         super(props)
@@ -13,7 +14,7 @@ export default class List extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="a">
                 我是libiao,参数
             </div>
         )

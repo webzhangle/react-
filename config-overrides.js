@@ -1,4 +1,4 @@
-const { override, fixBabelImports, addLessLoader } = require('customize-cra');
+const { override, fixBabelImports, addLessLoader,addPostcssPlugins } = require('customize-cra');
 module.exports = override(
     fixBabelImports('import', {
         libraryName: 'antd',
@@ -9,4 +9,11 @@ module.exports = override(
         javascriptEnabled: true,
         modifyVars: { '@btn-primary-bg': '#f00' },
     }),
+    addPostcssPlugins([require('postcss-pxtorem')({
+        rootValue: 75,
+        propList: ['*'],
+        // propList: ['*', '!border*', '!font-size*', '!letter-spacing'],
+        // propWhiteList: []
+        selectorBlackList: []
+     }),])
 );
