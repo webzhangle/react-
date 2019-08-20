@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
-
+import axios from 'axios'
 export default class List extends Component {
     constructor(props){
         super(props)
         this.state = {}
     }
     componentDidMount () {
-        console.log(this.props.match.params.id)
+        // console.log(this.props.match.params.id)
+        axios.get('/user').then((res)=>{
+            console.log(res)
+        })
     }
     render() {
         return (
