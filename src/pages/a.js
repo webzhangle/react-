@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
-import Router from './router/index'
-export default class App extends Component {
+
+export default class a extends Component {
     render() {
         return (
             <div>
-                <Router />
+                123 aaaa
             </div>
         )
     }
 }
-

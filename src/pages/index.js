@@ -17,7 +17,7 @@ export default class Index extends Component {
             <div>
                 <Header />
                 <Carousel/>
-                <Button type="primary" onClick={}>primary</Button>
+                <Button type="primary">primary</Button>
             </div>
           
         );

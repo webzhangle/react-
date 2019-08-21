@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import '../components/css.css'
+import { Route } from 'react-router-dom';
 export default class List extends Component {
     constructor(props){
         super(props)
@@ -13,9 +14,14 @@ export default class List extends Component {
         })
     }
     render() {
+        console.log(this.props.routes)
         return (
             <div className="a">
-                我是libiao,参数
+                {
+                    this.props.routes.map((item,index)=>{
+                        return <Route key={index} exact path={item.path} component={item.component} />
+                    })
+                }
             </div>
         )
     }
