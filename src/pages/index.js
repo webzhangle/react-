@@ -5,14 +5,13 @@ import { Button } from 'antd-mobile';
 export default class Index extends Component {
     constructor (props) {
         super(props)
-        
     }
-      componentDidMount() {
+    componentDidMount() {
           this.setState({
             data: ['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI'],
           });
-      }
-      render() {
+    }
+    render() {
         return (
             <div>
                 <Header />
@@ -21,6 +20,5 @@ export default class Index extends Component {
             </div>
           
         );
-      }
-    
+    }
 }
